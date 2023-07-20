@@ -1,0 +1,19 @@
+{
+  "name": "proyecto_desarrollo_web",
+  "version": "1.0.0",
+  "description": "proyecto curso desarrollo web coder house",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cortezesteban/proyecto_42980.git"
+  },
+  "author": "esteban cortez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cortezesteban/proyecto_42980/issues"
+  },
+  "homepage": "https://github.com/cortezesteban/proyecto_42980#readme"
+}
