@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&family=Shadows+Into+Light&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/***** Mapa *****/
+
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:370px;
+    width:536px;
+}
+
+.gmap_canvas{
+    overflow:hidden;
+    background:none!important;
+    height:370px;
+    width:536px;
+}
+
+/************************************************
+                      HEADER
+*************************************************/
+
+header{
+    background: linear-gradient(to right, #0a0b0c, #303137);
+}
+
+.nav{
+    padding: 0px;
+}
+
+.lista{
+    width: 100%;
+}
+
+.divImgNav img{
+    width: 50px;
+    height: 50px;
+}
+
+.lista li{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: Shadows, sans-serif;
+    font-weight: 400;
+}
+
+.active{
+    background: linear-gradient(to right, #0b427997, rgba(90, 113, 147, 0.399));
+    border-radius: 5px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    background: linear-gradient(to right, #0b427997, rgba(90, 113, 147, 0.122));
+    border-radius: 5px;
+}
+
+.divImgNav img:hover{
+    background-color:aqua;
+    border-radius: 50%;
+}
+
+/************************************************
+                       MAIN
+************************************************/
+
+main{
+    background-image: url('../assets/img/storm_background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.h1Tittle{
+    font-size: 1.8rem;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+}
+
+.h2Tittle{
+    font-size: 1.5rem;
+    font-family: Poppins, sans-serif;
+}
+
+.h3Tittle{
+    font-size: 1rem;
+    font-family: Poppins, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.h4Tittle{
+    font-size: 1.3rem;
+    font-family: Poppins, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.parrafo{
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    text-align:justify;
+}
+
+.borde{
+    border-top: 5px solid black;
+}
+
+/***** Pantalla Index *****/
+
+#videoInicio{
+    z-index: 1;
+}
+
+.contenedorInicio{
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.473);
+    height: 110px;
+    width: 700px;
+    border-radius: 5px;
+}
+
+.tituloPrincipal{
+    font-size: 40px;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+}
+
+.imgInicio{
+    width: 200px;
+    height: 320px;
+}
+
+.carousel-item{
+    height: 80vh;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedorIndex{
+    background-color: rgba(0, 0, 0, 0.603);
+}
+
+.contenedorCard{
+    margin:0 auto;
+    gap:3rem;
+}
+
+.cardRecomendado{
+    width:350px;
+    height:auto;
+    background: linear-gradient(to right, rgb(23, 29, 35), rgba(30, 39, 47, 0.479));
+    border-radius: 5px;
+}
+
+/***** Pantalla Analisis *****/
+
+.divDiablo4{
+    height: 600px;
+    background-image: url('../assets/img/diablo_4.png');
+    background-position:top;
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+}
+
+.divNoMamSky{
+    height: 600px;
+    background-image: url('../assets/img/no_man_sky.png');
+    border-bottom: 5px solid black;
+}
+
+.divStreetFighter{
+    height: 600px;
+    background-image: url('../assets/img/street_fighter_6.jpg');
+    background-position-x: center;
+    background-position-y:center;
+    border-bottom: 5px solid black;
+}
+
+.divDredge{
+    height: 600px;
+    background-image: url('../assets/img/dredge.jpg');
+    background-position: bottom;
+    border-bottom: 5px solid black;
+}
+
+.divStarWars{
+    height: 600px;
+    background-image: url('../assets/img/star_war_survivor.jpg');
+    background-position-y:center;
+    border-bottom: 5px solid black;
+    margin-bottom: 50px;
+}
+
+.contenedorFondoAnalisis{
+    width: 600px;
+}
+
+.contenedorAnalisis{
+    background-color: rgba(0, 0, 0, 0.525);
+    height: auto;
+}
+
+.hoverAnalisis:hover{
+    background: linear-gradient(to right, #fafafabf, rgba(119, 122, 125, 0.075));
+    border-radius: 5px;
+}
+
+/***** Pantalla Avances *****/
+
+.divContenedorAvance1{
+    background-image: url('../assets/img/fondo_analisis_1.jpg');
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+}
+
+.divContenedorAvance2{
+    background-image: url('../assets/img/fondo_analisis_2.jpg');
+    border-bottom: 5px solid black;
+}
+
+.imagenAvances{
+    width: 500px;
+    height: 300px;
+}
+
+.iFrame{
+    width:500px; 
+    height:300px
+}
+
+/***** Pantalla Guias *****/
+
+.parrafoColor{
+    color: rgb(255, 255, 255);
+}
+
+.parrafoHover:hover{
+    color:aqua;
+}
+
+/***** Pantalla Contacto *****/
+
+.btnForm{
+    background-color: rgb(22, 78, 139);
+}
+
+.btnForm:hover{
+    background-color: rgb(58, 113, 172);
+}
+    
+.formulario{
+    width: 60%;
+}
+
+
+/************************************************
+                    FOOTER 
+************************************************/
+
+.divFooter{
+    background: linear-gradient(to right, #0a0b0c, #303137);
+}
+
+.divFooter img{
+    width: 30px;
+    height: 40px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+
+/************************************************
+                 MEDIA QUERIES 
+************************************************/
+
+@media screen and (min-width:0px) and (max-width: 768px){
+
+    /************************************************
+                 MEDIA QUERIES MAIN
+    ************************************************/
+    
+    .h1Tittle{
+        font-size: 1.2rem;
+    }
+
+    .h2Tittle{
+        font-size: 1.2rem;
+    }
+
+    .h4Tittle{
+        font-size: 1rem;
+    }
+
+    .parrafo{
+        font-size: 1rem;
+    }
+
+    /***** Pantalla Index *****/
+
+    .contenedorInicio{
+        height: auto;
+        width: 90%;
+    }
+
+    .tituloPrincipal{
+        font-size: 25px;
+    }
+
+    .divRecomendados{
+        flex-direction: column;
+    }
+
+    .carousel-item{
+        height: auto;
+    }
+
+    .contenedorCard{
+        flex-direction: column;
+    }
+
+    .cardRecomendado{
+        width: 100%;
+    }
+
+    /***** Pantalla Analisis *****/
+
+    .divDiablo4{
+        background-image: url('../assets/img/diablo_4_movil.png');
+    }
+
+    .divNoMamSky{
+        background-image: url('../assets/img/no_man_sky_movil.png');
+    }
+
+    .divStreetFighter{
+        background-image: url('../assets/img/street_fighter_6_movil.png');
+    }
+
+    .divDredge{
+        background-image: url('../assets/img/dredge_movil.png');
+    }
+
+    .divStarWars{
+        background-image: url('../assets/img/star_war_survivor_movil.png');
+    }
+
+    /***** Pantalla Avances *****/
+
+    .invertir{
+        flex-direction: column-reverse;
+    }
+
+    .imagenAvances{
+        width: 100%;
+        height: auto;
+    }
+
+    .iFrame{
+        width: 100%;
+        height:200px;
+    }
+
+    /***** Pantalla Contacto *****/
+    
+    .formulario{
+        width: 100%;
+    }
+    
+    /************************************************
+                 MEDIA QUERIES FOOTER 
+    ************************************************/
+
+    .links{
+        width: 100%;
+    }
+}
