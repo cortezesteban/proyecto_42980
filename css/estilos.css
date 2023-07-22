@@ -23,9 +23,8 @@
 /************************************************
                       HEADER
 *************************************************/
-
-header{
-    background: linear-gradient(to right, #0a0b0c, #303137);
+header {
+  background: linear-gradient(to right, #0a0b0c, #303137);
 }
 
 .nav {
@@ -54,7 +53,7 @@ header{
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  background: linear-gradient(to right, rgba(11, 66, 121, 0.5921568627), rgba(90, 113, 147, 0.122));
+  background: linear-gradient(to right, rgba(11, 66, 121, 0.5921568627), rgba(90, 113, 147, 0.399));
   border-radius: 5px;
 }
 
@@ -109,12 +108,7 @@ main {
 }
 
 /***** Pantalla Index *****/
-#videoInicio {
-  z-index: 1;
-}
-
 .contenedorInicio {
-  z-index: 2;
   background-color: rgba(0, 0, 0, 0.473);
   height: 110px;
   width: 700px;
