@@ -26,51 +26,38 @@
 header {
   background: linear-gradient(to right, #0a0b0c, #303137);
 }
-
-.nav {
+header .nav {
   padding: 0px;
 }
-
-.lista {
-  width: 100%;
-}
-
-.divImgNav img {
+header .nav img {
   width: 50px;
   height: 50px;
 }
-
-.lista li {
+header .nav img:hover {
+  background-color: aqua;
+  border-radius: 50%;
+}
+header .nav .lista {
+  width: 100%;
+}
+header .nav .lista li {
   font-size: 1rem;
   text-transform: uppercase;
   font-family: Shadows, sans-serif;
   font-weight: 400;
 }
-
-.active {
+header .nav .lista li .active {
   background: linear-gradient(to right, rgba(11, 66, 121, 0.5921568627), rgba(90, 113, 147, 0.399));
   border-radius: 5px;
 }
-
-.navbar-dark .navbar-nav .nav-link:hover {
+header .navbar-dark .navbar-nav .nav-link:hover {
   background: linear-gradient(to right, rgba(11, 66, 121, 0.5921568627), rgba(90, 113, 147, 0.399));
   border-radius: 5px;
-}
-
-.divImgNav img:hover {
-  background-color: aqua;
-  border-radius: 50%;
 }
 
 /************************************************
                        MAIN
 ************************************************/
-main {
-  background-image: url("../assets/img/storm_background.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-
 .h1Tittle {
   font-size: 1.8rem;
   font-family: Poppins, sans-serif;
@@ -108,143 +95,200 @@ main {
 }
 
 /***** Pantalla Index *****/
-.contenedorInicio {
+main {
+  background-image: url("../assets/img/storm_background.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+main .contenedorInicio {
   background-color: rgba(0, 0, 0, 0.473);
   height: 110px;
   width: 700px;
   border-radius: 5px;
 }
-
-.tituloPrincipal {
+main .contenedorInicio .tituloPrincipal {
   font-size: 40px;
   font-family: "Shadows Into Light", cursive;
   font-weight: bold;
 }
-
-.imgInicio {
-  width: 200px;
-  height: 320px;
-}
-
-.carousel-item {
+main .carousel-item {
   height: 80vh;
 }
-
-.carousel-item img {
+main .carousel-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-.contenedorIndex {
+main .carousel-item .contenedorIndex {
   background-color: rgba(0, 0, 0, 0.603);
 }
-
-.contenedorCard {
+main .contenedorCard {
   margin: 0 auto;
   gap: 3rem;
 }
-
-.cardRecomendado {
+main .contenedorCard .cardRecomendado {
   width: 350px;
   height: auto;
   background: linear-gradient(to right, rgb(23, 29, 35), rgba(30, 39, 47, 0.479));
   border-radius: 5px;
 }
+main .contenedorCard .cardRecomendado .imgInicio {
+  width: 200px;
+  height: 320px;
+}
 
 /***** Pantalla Analisis *****/
-.divDiablo4 {
+main {
+  background-image: url("../assets/img/storm_background.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+main .divDiablo4 {
   height: 600px;
   background-image: url("../assets/img/diablo_4.png");
   background-position: top;
   border-bottom: 5px solid black;
   border-top: 5px solid black;
 }
-
-.divNoMamSky {
+main .divDiablo4 .hoverAnalisis:hover {
+  background: linear-gradient(to right, rgba(250, 250, 250, 0.7490196078), rgba(119, 122, 125, 0.075));
+  border-radius: 5px;
+}
+main .divDiablo4 .contenedorFondoAnalisis {
+  width: 600px;
+}
+main .divDiablo4 .contenedorFondoAnalisis .contenedorAnalisis {
+  background-color: rgba(0, 0, 0, 0.525);
+  height: auto;
+}
+main .divNoMamSky {
   height: 600px;
   background-image: url("../assets/img/no_man_sky.png");
   border-bottom: 5px solid black;
 }
-
-.divStreetFighter {
+main .divNoMamSky .hoverAnalisis:hover {
+  background: linear-gradient(to right, rgba(250, 250, 250, 0.7490196078), rgba(119, 122, 125, 0.075));
+  border-radius: 5px;
+}
+main .divNoMamSky .contenedorFondoAnalisis {
+  width: 600px;
+}
+main .divNoMamSky .contenedorFondoAnalisis .contenedorAnalisis {
+  background-color: rgba(0, 0, 0, 0.525);
+  height: auto;
+}
+main .divStreetFighter {
   height: 600px;
   background-image: url("../assets/img/street_fighter_6.jpg");
   background-position-x: center;
   background-position-y: center;
   border-bottom: 5px solid black;
 }
-
-.divDredge {
+main .divStreetFighter .hoverAnalisis:hover {
+  background: linear-gradient(to right, rgba(250, 250, 250, 0.7490196078), rgba(119, 122, 125, 0.075));
+  border-radius: 5px;
+}
+main .divStreetFighter .contenedorFondoAnalisis {
+  width: 600px;
+}
+main .divStreetFighter .contenedorFondoAnalisis .contenedorAnalisis {
+  background-color: rgba(0, 0, 0, 0.525);
+  height: auto;
+}
+main .divDredge {
   height: 600px;
   background-image: url("../assets/img/dredge.jpg");
   background-position: bottom;
   border-bottom: 5px solid black;
 }
-
-.divStarWars {
+main .divDredge .hoverAnalisis:hover {
+  background: linear-gradient(to right, rgba(250, 250, 250, 0.7490196078), rgba(119, 122, 125, 0.075));
+  border-radius: 5px;
+}
+main .divDredge .contenedorFondoAnalisis {
+  width: 600px;
+}
+main .divDredge .contenedorFondoAnalisis .contenedorAnalisis {
+  background-color: rgba(0, 0, 0, 0.525);
+  height: auto;
+}
+main .divStarWars {
   height: 600px;
   background-image: url("../assets/img/star_war_survivor.jpg");
   background-position-y: center;
   border-bottom: 5px solid black;
   margin-bottom: 50px;
 }
-
-.contenedorFondoAnalisis {
+main .divStarWars .hoverAnalisis:hover {
+  background: linear-gradient(to right, rgba(250, 250, 250, 0.7490196078), rgba(119, 122, 125, 0.075));
+  border-radius: 5px;
+}
+main .divStarWars .contenedorFondoAnalisis {
   width: 600px;
 }
-
-.contenedorAnalisis {
+main .divStarWars .contenedorFondoAnalisis .contenedorAnalisis {
   background-color: rgba(0, 0, 0, 0.525);
   height: auto;
 }
 
-.hoverAnalisis:hover {
-  background: linear-gradient(to right, rgba(250, 250, 250, 0.7490196078), rgba(119, 122, 125, 0.075));
-  border-radius: 5px;
-}
-
 /***** Pantalla Avances *****/
-.divContenedorAvance1 {
+main {
+  background-image: url("../assets/img/storm_background.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+main .divContenedorAvance1 {
   background-image: url("../assets/img/fondo_analisis_1.jpg");
   border-bottom: 5px solid black;
   border-top: 5px solid black;
 }
-
-.divContenedorAvance2 {
-  background-image: url("../assets/img/fondo_analisis_2.jpg");
-  border-bottom: 5px solid black;
-}
-
-.imagenAvances {
+main .divContenedorAvance1 .imagenAvances {
   width: 500px;
   height: 300px;
 }
-
-.iFrame {
+main .divContenedorAvance1 .iFrame {
+  width: 500px;
+  height: 300px;
+}
+main .divContenedorAvance2 {
+  background-image: url("../assets/img/fondo_analisis_2.jpg");
+  border-bottom: 5px solid black;
+}
+main .divContenedorAvance2 .imagenAvances {
+  width: 500px;
+  height: 300px;
+}
+main .divContenedorAvance2 .iFrame {
   width: 500px;
   height: 300px;
 }
 
 /***** Pantalla Guias *****/
-.parrafoColor {
+main {
+  background-image: url("../assets/img/storm_background.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+main .parrafoColor {
   color: rgb(255, 255, 255);
 }
-
-.parrafoHover:hover {
+main .parrafoHover:hover {
   color: aqua;
 }
 
 /***** Pantalla Contacto *****/
-.btnForm {
+main {
+  background-image: url("../assets/img/storm_background.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+main .btnForm {
   background-color: rgb(22, 78, 139);
 }
-
-.btnForm:hover {
+main .btnForm:hover {
   background-color: rgb(58, 113, 172);
 }
-
-.formulario {
+main .formulario {
   width: 60%;
 }
 
@@ -254,7 +298,6 @@ main {
 .divFooter {
   background: linear-gradient(to right, #0a0b0c, #303137);
 }
-
 .divFooter img {
   width: 30px;
   height: 40px;
@@ -283,55 +326,52 @@ main {
     font-size: 1rem;
   }
   /***** Pantalla Index *****/
-  .contenedorInicio {
+  main .contenedorInicio {
     height: auto;
     width: 90%;
   }
-  .tituloPrincipal {
+  main .contenedorInicio .tituloPrincipal {
     font-size: 25px;
   }
-  .divRecomendados {
-    flex-direction: column;
-  }
-  .carousel-item {
+  main .carousel-item {
     height: auto;
   }
-  .contenedorCard {
+  main .contenedorCard {
     flex-direction: column;
   }
-  .cardRecomendado {
+  main .contenedorCard .cardRecomendado {
     width: 100%;
   }
   /***** Pantalla Analisis *****/
-  .divDiablo4 {
+  main .divDiablo4 {
     background-image: url("../assets/img/diablo_4_movil.png");
   }
-  .divNoMamSky {
+  main .divNoMamSky {
     background-image: url("../assets/img/no_man_sky_movil.png");
   }
-  .divStreetFighter {
+  main .divStreetFighter {
     background-image: url("../assets/img/street_fighter_6_movil.png");
   }
-  .divDredge {
+  main .divDredge {
     background-image: url("../assets/img/dredge_movil.png");
   }
-  .divStarWars {
+  main .divStarWars {
     background-image: url("../assets/img/star_war_survivor_movil.png");
   }
   /***** Pantalla Avances *****/
-  .invertir {
+  main .invertir {
     flex-direction: column-reverse;
   }
-  .imagenAvances {
+  main .imagenAvances {
     width: 100%;
     height: auto;
   }
-  .iFrame {
+  main .iFrame {
     width: 100%;
     height: 200px;
   }
   /***** Pantalla Contacto *****/
-  .formulario {
+  main .formulario {
     width: 100%;
   }
   /************************************************
