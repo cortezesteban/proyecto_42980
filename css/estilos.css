@@ -5,59 +5,6 @@
   box-sizing: border-box;
 }
 
-/***** Mapa *****/
-.mapouter {
-  position: relative;
-  text-align: right;
-  height: 370px;
-  width: 536px;
-}
-
-.gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  height: 370px;
-  width: 536px;
-}
-
-/************************************************
-                      HEADER
-*************************************************/
-header {
-  background: linear-gradient(to right, #0a0b0c, #303137);
-}
-header .nav {
-  padding: 0px;
-}
-header .nav img {
-  width: 50px;
-  height: 50px;
-}
-header .nav img:hover {
-  background-color: aqua;
-  border-radius: 50%;
-}
-header .nav .lista {
-  width: 100%;
-}
-header .nav .lista li {
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-family: Shadows, sans-serif;
-  font-weight: 400;
-}
-header .nav .lista li .active {
-  background: linear-gradient(to right, rgba(11, 66, 121, 0.5921568627), rgba(90, 113, 147, 0.399));
-  border-radius: 5px;
-}
-header .navbar-dark .navbar-nav .nav-link:hover {
-  background: linear-gradient(to right, rgba(11, 66, 121, 0.5921568627), rgba(90, 113, 147, 0.399));
-  border-radius: 5px;
-}
-
-/************************************************
-                       MAIN
-************************************************/
 .h1Tittle {
   font-size: 1.8rem;
   font-family: Poppins, sans-serif;
@@ -92,6 +39,55 @@ header .navbar-dark .navbar-nav .nav-link:hover {
 
 .borde {
   border-top: 5px solid black;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  /************************************************
+               MEDIA QUERIES MAIN
+  ************************************************/
+  .h1Tittle {
+    font-size: 1.2rem;
+  }
+  .h2Tittle {
+    font-size: 1.2rem;
+  }
+  .h4Tittle {
+    font-size: 1rem;
+  }
+  .parrafo {
+    font-size: 1rem;
+  }
+}
+header {
+  background: linear-gradient(to right, #0a0b0c, #303137);
+}
+header .nav {
+  padding: 0px;
+}
+header .nav img {
+  width: 50px;
+  height: 50px;
+}
+header .nav img:hover {
+  background-color: aqua;
+  border-radius: 50%;
+}
+header .nav .lista {
+  width: 100%;
+}
+header .nav .lista li {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: Shadows, sans-serif;
+  font-weight: 400;
+}
+header .nav .lista li .active {
+  background: linear-gradient(to right, rgba(11, 66, 121, 0.5921568627), rgba(90, 113, 147, 0.399));
+  border-radius: 5px;
+}
+header .navbar-dark .navbar-nav .nav-link:hover {
+  background: linear-gradient(to right, rgba(11, 66, 121, 0.5921568627), rgba(90, 113, 147, 0.399));
+  border-radius: 5px;
 }
 
 /***** Pantalla Index *****/
@@ -282,49 +278,29 @@ main {
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
-main .btnForm {
-  background-color: rgb(22, 78, 139);
-}
-main .btnForm:hover {
-  background-color: rgb(58, 113, 172);
-}
 main .formulario {
   width: 60%;
 }
-
-/************************************************
-                    FOOTER 
-************************************************/
-.divFooter {
-  background: linear-gradient(to right, #0a0b0c, #303137);
+main .formulario .btnForm {
+  background-color: rgb(22, 78, 139);
 }
-.divFooter img {
-  width: 30px;
-  height: 40px;
-  margin-right: 10px;
-  padding-bottom: 10px;
-  margin-left: 10px;
+main .formulario .btnForm:hover {
+  background-color: rgb(58, 113, 172);
+}
+main .mapouter {
+  position: relative;
+  text-align: right;
+  height: 370px;
+  width: 536px;
+}
+main .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 370px;
+  width: 536px;
 }
 
-/************************************************
-                 MEDIA QUERIES 
-************************************************/
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  /************************************************
-               MEDIA QUERIES MAIN
-  ************************************************/
-  .h1Tittle {
-    font-size: 1.2rem;
-  }
-  .h2Tittle {
-    font-size: 1.2rem;
-  }
-  .h4Tittle {
-    font-size: 1rem;
-  }
-  .parrafo {
-    font-size: 1rem;
-  }
   /***** Pantalla Index *****/
   main .contenedorInicio {
     height: auto;
@@ -374,10 +350,20 @@ main .formulario {
   main .formulario {
     width: 100%;
   }
-  /************************************************
-               MEDIA QUERIES FOOTER 
-  ************************************************/
-  .links {
+}
+footer .divFooter {
+  background: linear-gradient(to right, #0a0b0c, #303137);
+}
+footer .divFooter img {
+  width: 30px;
+  height: 40px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  footer .links {
     width: 100%;
   }
 }
