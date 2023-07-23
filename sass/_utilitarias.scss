@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&family=Shadows+Into+Light&display=swap');
+
+.h1Tittle{
+    font-size: $fuente-escala-5;
+    font-family: $tipo-fuente-estandar-1;
+    font-weight: 600;
+}
+
+.h2Tittle{
+    font-size: $fuente-escala-4;
+    font-family: $tipo-fuente-estandar-1;
+}
+
+.h3Tittle{
+    font-size: $fuente-escala-1;
+    font-family: $tipo-fuente-estandar-1;
+    margin-top: $medida-estandar-30;
+    margin-bottom: $medida-estandar-10;
+}
+
+.h4Tittle{
+    font-size: $fuente-escala-3;
+    font-family: $tipo-fuente-estandar-1;
+    margin-top: $medida-estandar-30;
+    margin-bottom: $medida-estandar-10;
+}
+
+.parrafo{
+    font-family: $tipo-fuente-estandar-1;
+    font-size: $fuente-escala-1;
+    font-weight: 200;
+    text-align:$fuente-forma-alin;
+}
+
+.borde{
+    border-top: $borde-estandar-2;
+}
+
+@media screen and (min-width:0px) and (max-width: 768px){
+
+    /************************************************
+                 MEDIA QUERIES MAIN
+    ************************************************/
+    
+    .h1Tittle{
+        font-size: $fuente-escala-2;
+    }
+
+    .h2Tittle{
+        font-size: $fuente-escala-2;
+    }
+
+    .h4Tittle{
+        font-size: $fuente-escala-1;
+    }
+
+    .parrafo{
+        font-size: $fuente-escala-1;
+    }
+}

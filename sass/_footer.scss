@@ -1,0 +1,21 @@
+footer{
+    .divFooter{
+        background: $degradado-principal;
+
+        img{
+            width: $medida-estandar-30;
+            height: $medida-estandar-40;
+            margin-right: $medida-estandar-10;
+            padding-bottom: $medida-estandar-10;
+            margin-left: $medida-estandar-10;
+        }
+    }
+}
+
+@media screen and (min-width:0px) and (max-width: 768px){
+    footer{
+        .links{
+            width: $porcentaje-estandar-100;
+        }
+    }
+}

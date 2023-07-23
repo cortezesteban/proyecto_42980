@@ -1,0 +1,31 @@
+header{
+    background: $degradado-principal;
+    .nav{
+        padding: $medida-estandar-0;
+        img{
+            width: $medida-estandar-50;
+            height: $medida-estandar-50;
+        }
+        img:hover{
+            background-color:$color-estandar-1;
+            border-radius: $porcentaje-estandar-50;
+        }
+        .lista{
+            width: $porcentaje-estandar-100;
+            li{
+                font-size: $fuente-escala-1;
+                text-transform: $fuente-forma-mayus;
+                font-family: $tipo-fuente-estandar-3;
+                font-weight: 400;
+                .active{
+                    background: $degradado-menu;
+                    border-radius: $borde-estandar-1;
+                }
+            }
+        } 
+    }
+    .navbar-dark .navbar-nav .nav-link:hover{
+        background: $degradado-menu;
+        border-radius: $borde-estandar-1;
+    }
+}

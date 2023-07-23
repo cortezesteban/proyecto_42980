@@ -1,0 +1,306 @@
+/***** Pantalla Index *****/
+
+main{
+    background-image: $imagen-fondo-main;
+    background-attachment: $imagen-agregado;
+    background-repeat: no-repeat;
+
+    .contenedorInicio{
+        background-color: $color-estandar-2;
+        height: $medida-estandar-110;
+        width: $medida-estandar-700;
+        border-radius: $borde-estandar-1;
+        .tituloPrincipal{
+            font-size: $medida-estandar-40;
+            font-family: $tipo-fuente-estandar-2;
+            font-weight: $fuente-forma-neg;
+        }
+    }
+    
+    .carousel-item{
+        height: 80vh;
+        img{
+            width: $porcentaje-estandar-100;
+            height: $porcentaje-estandar-100;
+            object-fit: $imagen-espacio;
+        }
+        .contenedorIndex{
+            background-color: $color-estandar-3;
+        }
+    }
+    
+    .contenedorCard{
+        margin:0 $posicion-estandar-auto;
+        gap:3rem;
+        .cardRecomendado{
+            width:$medida-estandar-350;
+            height:$posicion-estandar-auto;
+            background: $color-estandar-4;
+            border-radius: $borde-estandar-1;
+            .imgInicio{
+                width: $medida-estandar-200;
+                height: $medida-estandar-320;
+            }
+        }
+    }
+}
+
+/***** Pantalla Analisis *****/
+
+main{
+    background-image: $imagen-fondo-main;
+    background-attachment: $imagen-agregado;
+    background-repeat: no-repeat;
+
+    .divDiablo4{
+        height: $medida-estandar-600;
+        background-image: $imagen-fondo-diablo-1;
+        background-position:$posicion-estandar-top;
+        border-bottom: $borde-estandar-2;
+        border-top: $borde-estandar-2;
+        .hoverAnalisis:hover{
+            background: $color-estandar-5;
+            border-radius: $borde-estandar-1;
+        }
+        .contenedorFondoAnalisis{
+            width: $medida-estandar-600;
+            .contenedorAnalisis{
+                background-color: $color-estandar-6;
+                height: $posicion-estandar-auto;
+            }
+        }
+    }
+    
+    .divNoMamSky{
+        height: $medida-estandar-600;
+        background-image: $imagen-fondo-sky-1;
+        border-bottom: $borde-estandar-2;
+        .hoverAnalisis:hover{
+            background: $color-estandar-5;
+            border-radius: $borde-estandar-1;
+        }
+        .contenedorFondoAnalisis{
+            width: $medida-estandar-600;
+            .contenedorAnalisis{
+                background-color: $color-estandar-6;
+                height: $posicion-estandar-auto;
+            }
+        }
+    }
+    
+    .divStreetFighter{
+        height: $medida-estandar-600;
+        background-image: $imagen-fondo-street-1;
+        background-position-x: $posicion-estandar-center;
+        background-position-y:$posicion-estandar-center;
+        border-bottom: $borde-estandar-2;
+        .hoverAnalisis:hover{
+            background: $color-estandar-5;
+            border-radius: $borde-estandar-1;
+        }
+        .contenedorFondoAnalisis{
+            width: $medida-estandar-600;
+            .contenedorAnalisis{
+                background-color: $color-estandar-6;
+                height: $posicion-estandar-auto;
+            }
+        }
+    }
+    
+    .divDredge{
+        height: $medida-estandar-600;
+        background-image: $imagen-fondo-dredge-1;
+        background-position: $posicion-estandar-bottom;
+        border-bottom: $borde-estandar-2;
+        .hoverAnalisis:hover{
+            background: $color-estandar-5;
+            border-radius: $borde-estandar-1;
+        }
+        .contenedorFondoAnalisis{
+            width: $medida-estandar-600;
+            .contenedorAnalisis{
+                background-color: $color-estandar-6;
+                height: $posicion-estandar-auto;
+            }
+        }
+    }
+    
+    .divStarWars{
+        height: $medida-estandar-600;
+        background-image: $imagen-fondo-star-1;
+        background-position-y:$posicion-estandar-center;
+        border-bottom: $borde-estandar-2;
+        margin-bottom: $medida-estandar-50;
+        .hoverAnalisis:hover{
+            background: $color-estandar-5;
+            border-radius: $borde-estandar-1;
+        }
+        .contenedorFondoAnalisis{
+            width: $medida-estandar-600;
+            .contenedorAnalisis{
+                background-color: $color-estandar-6;
+                height: $posicion-estandar-auto;
+            }
+        }
+    }
+}
+
+
+
+/***** Pantalla Avances *****/
+
+main{
+    background-image: $imagen-fondo-main;
+    background-attachment: $imagen-agregado;
+    background-repeat: no-repeat;
+
+    .divContenedorAvance1{
+        background-image: $imagen-fondo-avance-1;
+        border-bottom: $borde-estandar-2;
+        border-top: $borde-estandar-2;
+        .imagenAvances{
+            width: $medida-estandar-500;
+            height: $medida-estandar-300;
+        }
+        .iFrame{
+            width:$medida-estandar-500; 
+            height:$medida-estandar-300
+        }
+    }
+    
+    .divContenedorAvance2{
+        background-image: $imagen-fondo-avance-2;
+        border-bottom: $borde-estandar-2;
+        .imagenAvances{
+            width: $medida-estandar-500;
+            height: $medida-estandar-300;
+        }
+        .iFrame{
+            width:$medida-estandar-500; 
+            height:$medida-estandar-300
+        }
+    }
+}
+
+/***** Pantalla Guias *****/
+
+main{
+    background-image: $imagen-fondo-main;
+    background-attachment: $imagen-agregado;
+    background-repeat: no-repeat;
+
+    .parrafoColor{
+        color: $color-estandar-7;
+    }
+    
+    .parrafoHover:hover{
+        color:$color-estandar-1
+    }
+}
+
+/***** Pantalla Contacto *****/
+
+main{
+    background-image: $imagen-fondo-main;
+    background-attachment: $imagen-agregado;
+    background-repeat: no-repeat;
+        
+    .formulario{
+        width: $porcentaje-estandar-60;
+
+        .btnForm{
+            background-color: $color-estandar-8;
+        }
+        
+        .btnForm:hover{
+            background-color: $color-estandar-9;
+        }
+    }
+    .mapouter{
+        position:$posicion-estandar-relative;
+        text-align:$posicion-estandar-rigth;
+        height:$medida-estandar-370;
+        width:$medida-estandar-536;
+    }
+    
+    .gmap_canvas{
+        overflow:hidden;
+        background:none!important;
+        height:$medida-estandar-370;
+        width:$medida-estandar-536;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width: 768px){
+    /***** Pantalla Index *****/
+
+    main{
+        .contenedorInicio{
+            height: $posicion-estandar-auto;
+            width: $porcentaje-estandar-90;
+            .tituloPrincipal{
+                font-size: $medida-estandar-25;
+            }
+        }
+    
+        .carousel-item{
+            height: $posicion-estandar-auto;
+        }
+    
+        .contenedorCard{
+            flex-direction: $direccion-estandar-column;
+            .cardRecomendado{
+                width: $porcentaje-estandar-100;
+            }
+        }
+    }
+
+    /***** Pantalla Analisis *****/
+    main{
+        .divDiablo4{
+            background-image: $imagen-fondo-diablo-2;
+        }
+    
+        .divNoMamSky{
+            background-image: $imagen-fondo-sky-2;
+        }
+    
+        .divStreetFighter{
+            background-image: $imagen-fondo-street-2;
+        }
+    
+        .divDredge{
+            background-image: $imagen-fondo-dredge-2;
+        }
+    
+        .divStarWars{
+            background-image: $imagen-fondo-star-2;
+        }
+    }
+
+    /***** Pantalla Avances *****/
+
+    main{
+        .invertir{
+            flex-direction: $direccion-estandar-col-rev;
+        }
+
+        .imagenAvances{
+            width: $porcentaje-estandar-100;
+            height: $posicion-estandar-auto;
+        }
+
+        .iFrame{
+            width: $porcentaje-estandar-100;
+            height:$medida-estandar-200;
+        }
+    }
+
+    /***** Pantalla Contacto *****/
+
+    main{  
+        .formulario{
+            width: $porcentaje-estandar-100;
+        }
+    }
+}
