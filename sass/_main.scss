@@ -1,17 +1,13 @@
 /***** Pantalla Index *****/
 
 main{
-    background-image: $imagen-fondo-main;
-    background-attachment: $imagen-agregado;
-    background-repeat: no-repeat;
+    @include propiedades-main;
 
     .contenedorInicio{
-        background-color: $color-estandar-2;
-        height: $medida-estandar-110;
-        width: $medida-estandar-700;
-        border-radius: $borde-estandar-1;
+        @include propiedades-tarjetas($color-estandar-2, $medida-estandar-110, $medida-estandar-700, $borde-estandar-1);
+
         .tituloPrincipal{
-            font-size: $medida-estandar-40;
+            font-size: map-get($map: $medidas-estandar, $key: 40);
             font-family: $tipo-fuente-estandar-2;
             font-weight: $fuente-forma-neg;
         }
@@ -20,8 +16,8 @@ main{
     .carousel-item{
         height: 80vh;
         img{
-            width: $porcentaje-estandar-100;
-            height: $porcentaje-estandar-100;
+            width: map-get($map: $porcentajes-estandar, $key: 100);
+            height: map-get($map: $porcentajes-estandar, $key: 100);
             object-fit: $imagen-espacio;
         }
         .contenedorIndex{
@@ -30,16 +26,14 @@ main{
     }
     
     .contenedorCard{
-        margin:0 $posicion-estandar-auto;
+        margin:0 map-get($map: $posicion-estardar, $key: automatico);
         gap:3rem;
         .cardRecomendado{
-            width:$medida-estandar-350;
-            height:$posicion-estandar-auto;
-            background: $color-estandar-4;
-            border-radius: $borde-estandar-1;
+            @include propiedades-tarjetas($color-estandar-4, $posicion-estandar-auto, $medida-estandar-350, $borde-estandar-1);
+
             .imgInicio{
-                width: $medida-estandar-200;
-                height: $medida-estandar-320;
+                width: map-get($map: $medidas-estandar, $key: 200);
+                height: map-get($map: $medidas-estandar, $key: 320);
             }
         }
     }
@@ -47,124 +41,117 @@ main{
 
 /***** Pantalla Analisis *****/
 
+%hover-analisis{
+    background: $color-estandar-5;
+    border-radius: $borde-estandar-1;
+}
+
+%contenedor-analisis{
+    background-color: $color-estandar-6;
+    height: map-get($map: $posicion-estardar, $key: automatico);
+}
+
 main{
-    background-image: $imagen-fondo-main;
-    background-attachment: $imagen-agregado;
-    background-repeat: no-repeat;
+    @include propiedades-main;
 
     .divDiablo4{
-        height: $medida-estandar-600;
-        background-image: $imagen-fondo-diablo-1;
-        background-position:$posicion-estandar-top;
-        border-bottom: $borde-estandar-2;
-        border-top: $borde-estandar-2;
+        @include propiedades-img-analisis($imagen-fondo:$imagen-fondo-diablo-1, 
+                                          $pos-img-fondo:$posicion-estandar-top,   
+                                          $borde-arriba:$borde-estandar-2);
+
         .hoverAnalisis:hover{
-            background: $color-estandar-5;
-            border-radius: $borde-estandar-1;
+            @extend %hover-analisis;
         }
         .contenedorFondoAnalisis{
-            width: $medida-estandar-600;
+            width: map-get($map: $medidas-estandar, $key: 600);
             .contenedorAnalisis{
-                background-color: $color-estandar-6;
-                height: $posicion-estandar-auto;
+                @extend %contenedor-analisis;
             }
         }
     }
     
     .divNoMamSky{
-        height: $medida-estandar-600;
-        background-image: $imagen-fondo-sky-1;
-        border-bottom: $borde-estandar-2;
+        @include propiedades-img-analisis($imagen-fondo:$imagen-fondo-sky-1);
+
         .hoverAnalisis:hover{
-            background: $color-estandar-5;
-            border-radius: $borde-estandar-1;
+            @extend %hover-analisis;
         }
         .contenedorFondoAnalisis{
-            width: $medida-estandar-600;
+            width: map-get($map: $medidas-estandar, $key: 600);
             .contenedorAnalisis{
-                background-color: $color-estandar-6;
-                height: $posicion-estandar-auto;
+                @extend %contenedor-analisis;
             }
         }
     }
     
     .divStreetFighter{
-        height: $medida-estandar-600;
-        background-image: $imagen-fondo-street-1;
-        background-position-x: $posicion-estandar-center;
-        background-position-y:$posicion-estandar-center;
-        border-bottom: $borde-estandar-2;
+        @include propiedades-img-analisis($imagen-fondo:$imagen-fondo-street-1,
+                                          $pos-img-fondo-x:$posicion-estandar-center,
+                                          $pos-img-fondo-y:$posicion-estandar-center,
+                                          );
+
         .hoverAnalisis:hover{
-            background: $color-estandar-5;
-            border-radius: $borde-estandar-1;
+            @extend %hover-analisis;
         }
         .contenedorFondoAnalisis{
-            width: $medida-estandar-600;
+            width: map-get($map: $medidas-estandar, $key: 600);
             .contenedorAnalisis{
-                background-color: $color-estandar-6;
-                height: $posicion-estandar-auto;
+                @extend %contenedor-analisis;
             }
         }
     }
     
     .divDredge{
-        height: $medida-estandar-600;
-        background-image: $imagen-fondo-dredge-1;
-        background-position: $posicion-estandar-bottom;
-        border-bottom: $borde-estandar-2;
+        @include propiedades-img-analisis($imagen-fondo:$imagen-fondo-dredge-1,
+                                          $pos-img-fondo:$posicion-estandar-bottom);
+
         .hoverAnalisis:hover{
-            background: $color-estandar-5;
-            border-radius: $borde-estandar-1;
+            @extend %hover-analisis;
         }
         .contenedorFondoAnalisis{
-            width: $medida-estandar-600;
+            width: map-get($map: $medidas-estandar, $key: 600);
             .contenedorAnalisis{
-                background-color: $color-estandar-6;
-                height: $posicion-estandar-auto;
+                @extend %contenedor-analisis;
             }
         }
     }
     
     .divStarWars{
-        height: $medida-estandar-600;
-        background-image: $imagen-fondo-star-1;
-        background-position-y:$posicion-estandar-center;
-        border-bottom: $borde-estandar-2;
-        margin-bottom: $medida-estandar-50;
+        @include propiedades-img-analisis($imagen-fondo:$imagen-fondo-star-1,
+                                          $pos-img-fondo-y:$posicion-estandar-center,
+                                          $margen-abajo:$medida-estandar-50);
+
         .hoverAnalisis:hover{
-            background: $color-estandar-5;
-            border-radius: $borde-estandar-1;
+            @extend %hover-analisis;
         }
         .contenedorFondoAnalisis{
-            width: $medida-estandar-600;
+            width: map-get($map: $medidas-estandar, $key: 600);
             .contenedorAnalisis{
-                background-color: $color-estandar-6;
-                height: $posicion-estandar-auto;
+                @extend %contenedor-analisis;
             }
         }
     }
 }
 
-
-
 /***** Pantalla Avances *****/
 
+%contenedor-img-iframes{
+    width: map-get($map: $medidas-estandar, $key: 500);
+    height: map-get($map: $medidas-estandar, $key: 300);
+}
+
 main{
-    background-image: $imagen-fondo-main;
-    background-attachment: $imagen-agregado;
-    background-repeat: no-repeat;
+    @include propiedades-main;
 
     .divContenedorAvance1{
         background-image: $imagen-fondo-avance-1;
         border-bottom: $borde-estandar-2;
         border-top: $borde-estandar-2;
         .imagenAvances{
-            width: $medida-estandar-500;
-            height: $medida-estandar-300;
+            @extend %contenedor-img-iframes;
         }
         .iFrame{
-            width:$medida-estandar-500; 
-            height:$medida-estandar-300
+            @extend %contenedor-img-iframes;
         }
     }
     
@@ -172,12 +159,10 @@ main{
         background-image: $imagen-fondo-avance-2;
         border-bottom: $borde-estandar-2;
         .imagenAvances{
-            width: $medida-estandar-500;
-            height: $medida-estandar-300;
+            @extend %contenedor-img-iframes;
         }
         .iFrame{
-            width:$medida-estandar-500; 
-            height:$medida-estandar-300
+            @extend %contenedor-img-iframes;
         }
     }
 }
@@ -185,9 +170,7 @@ main{
 /***** Pantalla Guias *****/
 
 main{
-    background-image: $imagen-fondo-main;
-    background-attachment: $imagen-agregado;
-    background-repeat: no-repeat;
+    @include propiedades-main;
 
     .parrafoColor{
         color: $color-estandar-7;
@@ -200,13 +183,16 @@ main{
 
 /***** Pantalla Contacto *****/
 
+%contenedor-mapa{
+    height:map-get($map: $medidas-estandar, $key: 370);
+    width:map-get($map: $medidas-estandar, $key: 536);
+}
+
 main{
-    background-image: $imagen-fondo-main;
-    background-attachment: $imagen-agregado;
-    background-repeat: no-repeat;
+    @include propiedades-main;
         
     .formulario{
-        width: $porcentaje-estandar-60;
+        width: map-get($map: $porcentajes-estandar, $key: 60);
 
         .btnForm{
             background-color: $color-estandar-8;
@@ -219,15 +205,13 @@ main{
     .mapouter{
         position:$posicion-estandar-relative;
         text-align:$posicion-estandar-rigth;
-        height:$medida-estandar-370;
-        width:$medida-estandar-536;
+        @extend %contenedor-mapa;
     }
     
     .gmap_canvas{
         overflow:hidden;
         background:none!important;
-        height:$medida-estandar-370;
-        width:$medida-estandar-536;
+        @extend %contenedor-mapa;
     }
 }
 
@@ -236,21 +220,21 @@ main{
 
     main{
         .contenedorInicio{
-            height: $posicion-estandar-auto;
-            width: $porcentaje-estandar-90;
+            height: map-get($map: $posicion-estardar, $key: automatico);
+            width: map-get($map: $porcentajes-estandar, $key: 90);
             .tituloPrincipal{
-                font-size: $medida-estandar-25;
+                font-size: map-get($map: $medidas-estandar, $key: 25);
             }
         }
     
         .carousel-item{
-            height: $posicion-estandar-auto;
+            height: map-get($map: $posicion-estardar, $key: automatico);
         }
     
         .contenedorCard{
             flex-direction: $direccion-estandar-column;
             .cardRecomendado{
-                width: $porcentaje-estandar-100;
+                width: map-get($map: $porcentajes-estandar, $key: 100);
             }
         }
     }
@@ -285,14 +269,28 @@ main{
             flex-direction: $direccion-estandar-col-rev;
         }
 
-        .imagenAvances{
-            width: $porcentaje-estandar-100;
-            height: $posicion-estandar-auto;
+        .divContenedorAvance1{
+            .imagenAvances{
+                width: map-get($map: $porcentajes-estandar, $key: 100);
+                height: map-get($map: $posicion-estardar, $key: automatico);
+            }
+
+            .iFrame{
+                width: map-get($map: $porcentajes-estandar, $key: 100);
+                height:map-get($map: $medidas-estandar, $key: 200);
+            }
         }
 
-        .iFrame{
-            width: $porcentaje-estandar-100;
-            height:$medida-estandar-200;
+        .divContenedorAvance2{
+            .imagenAvances{
+                width: map-get($map: $porcentajes-estandar, $key: 100);
+                height: map-get($map: $posicion-estardar, $key: automatico);
+            }
+
+            .iFrame{
+                width: map-get($map: $porcentajes-estandar, $key: 100);
+                height:map-get($map: $medidas-estandar, $key: 200);
+            }
         }
     }
 
@@ -300,7 +298,7 @@ main{
 
     main{  
         .formulario{
-            width: $porcentaje-estandar-100;
+            width: map-get($map: $porcentajes-estandar, $key: 100);;
         }
     }
 }

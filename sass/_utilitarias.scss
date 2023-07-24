@@ -1,33 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&family=Shadows+Into+Light&display=swap');
 
+%margenes-texto{
+    margin-top: map-get($map: $medidas-estandar, $key: 30);
+    margin-bottom: map-get($map: $medidas-estandar, $key: 10);
+}
+
 .h1Tittle{
-    font-size: $fuente-escala-5;
-    font-family: $tipo-fuente-estandar-1;
+    @include propiedades-texto($fuente-escala-5, $tipo-fuente-estandar-1);
     font-weight: 600;
 }
 
 .h2Tittle{
-    font-size: $fuente-escala-4;
-    font-family: $tipo-fuente-estandar-1;
+    @include propiedades-texto($fuente-escala-4, $tipo-fuente-estandar-1);
 }
 
 .h3Tittle{
-    font-size: $fuente-escala-1;
-    font-family: $tipo-fuente-estandar-1;
-    margin-top: $medida-estandar-30;
-    margin-bottom: $medida-estandar-10;
+    @include propiedades-texto($fuente-escala-1, $tipo-fuente-estandar-1);
+    @extend %margenes-texto;
 }
 
 .h4Tittle{
-    font-size: $fuente-escala-3;
-    font-family: $tipo-fuente-estandar-1;
-    margin-top: $medida-estandar-30;
-    margin-bottom: $medida-estandar-10;
+    @include propiedades-texto($fuente-escala-3, $tipo-fuente-estandar-1);
+    @extend %margenes-texto;
 }
 
 .parrafo{
-    font-family: $tipo-fuente-estandar-1;
-    font-size: $fuente-escala-1;
+    @include propiedades-texto($fuente-escala-1, $tipo-fuente-estandar-1);
     font-weight: 200;
     text-align:$fuente-forma-alin;
 }

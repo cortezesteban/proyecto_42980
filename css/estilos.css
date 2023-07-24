@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+.h4Tittle, .h3Tittle {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
 .h1Tittle {
   font-size: 1.8rem;
   font-family: Poppins, sans-serif;
@@ -19,20 +24,16 @@
 .h3Tittle {
   font-size: 1rem;
   font-family: Poppins, sans-serif;
-  margin-top: 30px;
-  margin-bottom: 10px;
 }
 
 .h4Tittle {
   font-size: 1.3rem;
   font-family: Poppins, sans-serif;
-  margin-top: 30px;
-  margin-bottom: 10px;
 }
 
 .parrafo {
-  font-family: Poppins, sans-serif;
   font-size: 1rem;
+  font-family: Poppins, sans-serif;
   font-weight: 200;
   text-align: justify;
 }
@@ -97,7 +98,7 @@ main {
   background-repeat: no-repeat;
 }
 main .contenedorInicio {
-  background-color: rgba(0, 0, 0, 0.473);
+  background: rgba(0, 0, 0, 0.473);
   height: 110px;
   width: 700px;
   border-radius: 5px;
@@ -123,9 +124,9 @@ main .contenedorCard {
   gap: 3rem;
 }
 main .contenedorCard .cardRecomendado {
-  width: 350px;
-  height: auto;
   background: linear-gradient(to right, rgb(23, 29, 35), rgba(30, 39, 47, 0.479));
+  height: auto;
+  width: 350px;
   border-radius: 5px;
 }
 main .contenedorCard .cardRecomendado .imgInicio {
@@ -134,6 +135,16 @@ main .contenedorCard .cardRecomendado .imgInicio {
 }
 
 /***** Pantalla Analisis *****/
+main .divStarWars .hoverAnalisis:hover, main .divDredge .hoverAnalisis:hover, main .divStreetFighter .hoverAnalisis:hover, main .divNoMamSky .hoverAnalisis:hover, main .divDiablo4 .hoverAnalisis:hover {
+  background: linear-gradient(to right, rgba(250, 250, 250, 0.7490196078), rgba(119, 122, 125, 0.075));
+  border-radius: 5px;
+}
+
+main .divStarWars .contenedorFondoAnalisis .contenedorAnalisis, main .divDredge .contenedorFondoAnalisis .contenedorAnalisis, main .divStreetFighter .contenedorFondoAnalisis .contenedorAnalisis, main .divNoMamSky .contenedorFondoAnalisis .contenedorAnalisis, main .divDiablo4 .contenedorFondoAnalisis .contenedorAnalisis {
+  background-color: rgba(0, 0, 0, 0.525);
+  height: auto;
+}
+
 main {
   background-image: url("../assets/img/storm_background.jpg");
   background-attachment: fixed;
@@ -142,92 +153,56 @@ main {
 main .divDiablo4 {
   height: 600px;
   background-image: url("../assets/img/diablo_4.png");
-  background-position: top;
   border-bottom: 5px solid black;
+  background-position: top;
   border-top: 5px solid black;
-}
-main .divDiablo4 .hoverAnalisis:hover {
-  background: linear-gradient(to right, rgba(250, 250, 250, 0.7490196078), rgba(119, 122, 125, 0.075));
-  border-radius: 5px;
 }
 main .divDiablo4 .contenedorFondoAnalisis {
   width: 600px;
-}
-main .divDiablo4 .contenedorFondoAnalisis .contenedorAnalisis {
-  background-color: rgba(0, 0, 0, 0.525);
-  height: auto;
 }
 main .divNoMamSky {
   height: 600px;
   background-image: url("../assets/img/no_man_sky.png");
   border-bottom: 5px solid black;
 }
-main .divNoMamSky .hoverAnalisis:hover {
-  background: linear-gradient(to right, rgba(250, 250, 250, 0.7490196078), rgba(119, 122, 125, 0.075));
-  border-radius: 5px;
-}
 main .divNoMamSky .contenedorFondoAnalisis {
   width: 600px;
-}
-main .divNoMamSky .contenedorFondoAnalisis .contenedorAnalisis {
-  background-color: rgba(0, 0, 0, 0.525);
-  height: auto;
 }
 main .divStreetFighter {
   height: 600px;
   background-image: url("../assets/img/street_fighter_6.jpg");
+  border-bottom: 5px solid black;
   background-position-x: center;
   background-position-y: center;
-  border-bottom: 5px solid black;
-}
-main .divStreetFighter .hoverAnalisis:hover {
-  background: linear-gradient(to right, rgba(250, 250, 250, 0.7490196078), rgba(119, 122, 125, 0.075));
-  border-radius: 5px;
 }
 main .divStreetFighter .contenedorFondoAnalisis {
   width: 600px;
 }
-main .divStreetFighter .contenedorFondoAnalisis .contenedorAnalisis {
-  background-color: rgba(0, 0, 0, 0.525);
-  height: auto;
-}
 main .divDredge {
   height: 600px;
   background-image: url("../assets/img/dredge.jpg");
-  background-position: bottom;
   border-bottom: 5px solid black;
-}
-main .divDredge .hoverAnalisis:hover {
-  background: linear-gradient(to right, rgba(250, 250, 250, 0.7490196078), rgba(119, 122, 125, 0.075));
-  border-radius: 5px;
+  background-position: bottom;
 }
 main .divDredge .contenedorFondoAnalisis {
   width: 600px;
 }
-main .divDredge .contenedorFondoAnalisis .contenedorAnalisis {
-  background-color: rgba(0, 0, 0, 0.525);
-  height: auto;
-}
 main .divStarWars {
   height: 600px;
   background-image: url("../assets/img/star_war_survivor.jpg");
-  background-position-y: center;
   border-bottom: 5px solid black;
+  background-position-y: center;
   margin-bottom: 50px;
-}
-main .divStarWars .hoverAnalisis:hover {
-  background: linear-gradient(to right, rgba(250, 250, 250, 0.7490196078), rgba(119, 122, 125, 0.075));
-  border-radius: 5px;
 }
 main .divStarWars .contenedorFondoAnalisis {
   width: 600px;
 }
-main .divStarWars .contenedorFondoAnalisis .contenedorAnalisis {
-  background-color: rgba(0, 0, 0, 0.525);
-  height: auto;
+/***** Pantalla Avances *****/
+main .divContenedorAvance2 .iFrame, main .divContenedorAvance2 .imagenAvances, main .divContenedorAvance1 .iFrame, main .divContenedorAvance1 .imagenAvances {
+  width: 500px;
+  height: 300px;
 }
 
-/***** Pantalla Avances *****/
 main {
   background-image: url("../assets/img/storm_background.jpg");
   background-attachment: fixed;
@@ -238,27 +213,10 @@ main .divContenedorAvance1 {
   border-bottom: 5px solid black;
   border-top: 5px solid black;
 }
-main .divContenedorAvance1 .imagenAvances {
-  width: 500px;
-  height: 300px;
-}
-main .divContenedorAvance1 .iFrame {
-  width: 500px;
-  height: 300px;
-}
 main .divContenedorAvance2 {
   background-image: url("../assets/img/fondo_analisis_2.jpg");
   border-bottom: 5px solid black;
 }
-main .divContenedorAvance2 .imagenAvances {
-  width: 500px;
-  height: 300px;
-}
-main .divContenedorAvance2 .iFrame {
-  width: 500px;
-  height: 300px;
-}
-
 /***** Pantalla Guias *****/
 main {
   background-image: url("../assets/img/storm_background.jpg");
@@ -273,6 +231,11 @@ main .parrafoHover:hover {
 }
 
 /***** Pantalla Contacto *****/
+main .gmap_canvas, main .mapouter {
+  height: 370px;
+  width: 536px;
+}
+
 main {
   background-image: url("../assets/img/storm_background.jpg");
   background-attachment: fixed;
@@ -290,14 +253,10 @@ main .formulario .btnForm:hover {
 main .mapouter {
   position: relative;
   text-align: right;
-  height: 370px;
-  width: 536px;
 }
 main .gmap_canvas {
   overflow: hidden;
   background: none !important;
-  height: 370px;
-  width: 536px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -338,11 +297,19 @@ main .gmap_canvas {
   main .invertir {
     flex-direction: column-reverse;
   }
-  main .imagenAvances {
+  main .divContenedorAvance1 .imagenAvances {
     width: 100%;
     height: auto;
   }
-  main .iFrame {
+  main .divContenedorAvance1 .iFrame {
+    width: 100%;
+    height: 200px;
+  }
+  main .divContenedorAvance2 .imagenAvances {
+    width: 100%;
+    height: auto;
+  }
+  main .divContenedorAvance2 .iFrame {
     width: 100%;
     height: 200px;
   }

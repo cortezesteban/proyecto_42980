@@ -1,0 +1,49 @@
+@mixin propiedades-main{
+    background-image: $imagen-fondo-main;
+    background-attachment: $imagen-agregado;
+    background-repeat: no-repeat;
+}
+
+@mixin propiedades-tarjetas($color-fondo, $alto, $ancho, $borde){
+    background: $color-fondo;
+    height: $alto;
+    width: $ancho;
+    border-radius: $borde;
+}
+
+@mixin propiedades-img-analisis($imagen-fondo, 
+                                $pos-img-fondo:null, 
+                                $pos-img-fondo-x:null, 
+                                $pos-img-fondo-y:null, 
+                                $borde-arriba:null, 
+                                $margen-abajo:null)
+{
+    height:$medida-estandar-600;
+    background-image:$imagen-fondo;
+    border-bottom:$borde-estandar-2;
+
+    @if ($pos-img-fondo != null) {
+        background-position:$pos-img-fondo;
+    };
+
+    @if ($pos-img-fondo-x != null) {
+        background-position-x: $pos-img-fondo-x;
+    }
+    
+    @if ($pos-img-fondo-y != null) {
+        background-position-y: $pos-img-fondo-y;
+    }
+    
+    @if ($borde-arriba != null) {
+        border-top: $borde-arriba;
+    }
+
+    @if ($margen-abajo != null) {
+        margin-bottom: $margen-abajo;
+    }
+}
+
+@mixin propiedades-texto($texto-tam, $texto-fuente) {
+    font-size: $texto-tam;
+    font-family: $texto-fuente;
+}
