@@ -24,8 +24,27 @@ header{
             }
         } 
     }
-    .navbar-dark .navbar-nav .nav-link:hover{
-        background: $degradado-menu;
-        border-radius: $borde-estandar-1;
+    .navbar-dark{ 
+        .navbar-nav{ 
+            .nav-link:hover{
+                background: $degradado-menu;
+                border-radius: $borde-estandar-1;
+                animation: mover 1.7s ease-in;
+            }
+        }
+    }
+    @keyframes mover {
+        15% {
+            transform: translateY(2px);}
+        30% {
+            transform: translateY(-2px);}
+        50% {
+            transform: translateY(2px);}
+        65% {
+            transform: translateY(-2px);}
+        80% {
+            transform: translateY(1px);}
+        100% {
+            transform: translateY(0);}
     }
 }

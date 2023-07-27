@@ -89,6 +89,27 @@ header .nav .lista li .active {
 header .navbar-dark .navbar-nav .nav-link:hover {
   background: linear-gradient(to right, rgba(11, 66, 121, 0.5921568627), rgba(90, 113, 147, 0.399));
   border-radius: 5px;
+  animation: mover 1.7s ease-in;
+}
+@keyframes mover {
+  15% {
+    transform: translateY(2px);
+  }
+  30% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  65% {
+    transform: translateY(-2px);
+  }
+  80% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /***** Pantalla Index *****/
