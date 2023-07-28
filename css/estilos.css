@@ -220,8 +220,8 @@ main .divStarWars .contenedorFondoAnalisis {
 }
 /***** Pantalla Avances *****/
 main .divContenedorAvance2 .iFrame, main .divContenedorAvance2 .imagenAvances, main .divContenedorAvance1 .iFrame, main .divContenedorAvance1 .imagenAvances {
-  width: 500px;
-  height: 300px;
+  width: 370px;
+  height: 200px;
 }
 
 main {

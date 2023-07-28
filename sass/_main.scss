@@ -136,8 +136,8 @@ main{
 /***** Pantalla Avances *****/
 
 %contenedor-img-iframes{
-    width: map-get($map: $medidas-estandar, $key: 500);
-    height: map-get($map: $medidas-estandar, $key: 300);
+    width: map-get($map: $medidas-estandar, $key: 370);
+    height: map-get($map: $medidas-estandar, $key: 200);
 }
 
 main{
