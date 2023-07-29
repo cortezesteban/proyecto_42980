@@ -173,7 +173,7 @@ main {
 }
 main .divDiablo4 {
   height: 600px;
-  background-image: url("../assets/img/diablo_4.png");
+  background-image: url("../assets/img/diablo_4.jpg");
   border-bottom: 5px solid black;
   background-position: top;
   border-top: 5px solid black;
@@ -183,7 +183,7 @@ main .divDiablo4 .contenedorFondoAnalisis {
 }
 main .divNoMamSky {
   height: 600px;
-  background-image: url("../assets/img/no_man_sky.png");
+  background-image: url("../assets/img/no_man_sky.jpg");
   border-bottom: 5px solid black;
 }
 main .divNoMamSky .contenedorFondoAnalisis {
@@ -300,19 +300,19 @@ main .gmap_canvas {
   }
   /***** Pantalla Analisis *****/
   main .divDiablo4 {
-    background-image: url("../assets/img/diablo_4_movil.png");
+    background-image: url("../assets/img/diablo_4_movil.jpg");
   }
   main .divNoMamSky {
-    background-image: url("../assets/img/no_man_sky_movil.png");
+    background-image: url("../assets/img/no_man_sky_movil.jpg");
   }
   main .divStreetFighter {
-    background-image: url("../assets/img/street_fighter_6_movil.png");
+    background-image: url("../assets/img/street_fighter_6_movil.jpg");
   }
   main .divDredge {
-    background-image: url("../assets/img/dredge_movil.png");
+    background-image: url("../assets/img/dredge_movil.jpg");
   }
   main .divStarWars {
-    background-image: url("../assets/img/star_war_survivor_movil.png");
+    background-image: url("../assets/img/star_war_survivor_movil.jpg");
   }
   /***** Pantalla Avances *****/
   main .invertir {
