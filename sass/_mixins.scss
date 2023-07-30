@@ -2,6 +2,7 @@
     background-image: $imagen-fondo-main;
     background-attachment: $imagen-agregado;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 @mixin propiedades-tarjetas($color-fondo, $alto, $ancho, $borde){
