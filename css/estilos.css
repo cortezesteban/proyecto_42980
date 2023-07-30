@@ -39,7 +39,7 @@
 }
 
 .borde {
-  border-top: 5px solid black;
+  border-bottom: 5px solid black;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -70,8 +70,9 @@ header .nav img {
   height: 50px;
 }
 header .nav img:hover {
-  background-color: aqua;
+  background-color: rgb(0, 255, 255);
   border-radius: 50%;
+  box-shadow: 0 0 10px rgb(0, 255, 255);
 }
 header .nav .lista {
   width: 100%;
@@ -270,7 +271,7 @@ main .parrafoColor {
   color: rgb(255, 255, 255);
 }
 main .parrafoHover:hover {
-  color: aqua;
+  color: rgb(0, 255, 255);
 }
 
 /***** Pantalla Contacto *****/

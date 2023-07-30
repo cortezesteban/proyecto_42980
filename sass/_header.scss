@@ -9,6 +9,7 @@ header{
         img:hover{
             background-color:$color-estandar-1;
             border-radius: map-get($map: $porcentajes-estandar, $key: 50);
+            box-shadow: $color-estandar-10;
         }
         .lista{
             width: map-get($map: $porcentajes-estandar, $key: 100);

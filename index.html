@@ -12,6 +12,7 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
@@ -52,20 +53,25 @@
     </header>
     <main class="container-fluid main">
         <section class="row">
-            <div class="col-12 d-flex justify-content-center align-items-center p-0 divVideoInicio">
+            <div class="col-12 d-flex justify-content-center align-items-center p-0 divVideoInicio borde">
                 <video autoplay muted loop class="w-100 h-100" id="videoInicio">
                     <source src="./assets/video/video_index.mp4" type="video/mp4">
                 </video>
-                <div class="position-absolute text-center text-white contenedorInicio">
+                <div class="position-absolute text-center text-white contenedorInicio" data-aos="flip-left" 
+                     data-aos-offset="100" data-aos-delay="20" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                             data-aos-once="true">
                     <p class="text-uppercase tituloPrincipal m-0">Pensado 4 Gamers</p>
                     <P class="text-uppercase h4Tittle text-center m-0">Revisa todo el contenido de tus juegos favoritos</P>
                 </div>
             </div>
-            <div class="col-12 borde">
-                <div class="col-12 mt-4 mb-2">
+            <div class="col-12">
+                <div class="col-12 mt-4 mb-2" data-aos="fade-up" data-aos-offset="100" data-aos-delay="20" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                     data-aos-once="true">
                     <h1 class="col-12 h1Tittle text-center text-uppercase text-white mt-5 mb-">Juegos Destacados</h1>
                 </div>
-                <div id="carouselExampleCaptions" class="carousel slide p-4" data-bs-ride="carousel">
+                <div id="carouselExampleCaptions" class="carousel slide p-4" data-bs-ride="carousel" 
+                     data-aos="fade-up" data-aos-offset="400" data-aos-delay="20" data-aos-duration="1000" 
+                     data-aos-easing="ease-in-out" data-aos-once="true">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
@@ -117,44 +123,55 @@
                     </button>
                 </div>
             </div>  
-            <!-- En la parte de Juegos Recomendados quiero agregar una ventana modal para ver el detalle completo del juego -->
             <div class="col-12">
                 <h2 class="h2Tittle text-center text-uppercase text-white mt-5">Recomendados por los usuarios</h2>
             </div>
             <div class="col-12 contenedorCard d-flex justify-content-evenly w-100 flex-wrap mt-5 mb-5">
-                <div class="cardRecomendado d-flex flex-column align-items-center justify-content-evenly p-2">
+                <div class="cardRecomendado d-flex flex-column align-items-center justify-content-evenly p-2" 
+                    data-aos="fade-up" data-aos-offset="100" data-aos-delay="20" data-aos-duration="1000" 
+                    data-aos-easing="ease-in-out" data-aos-once="true">
                     <img class="imgInicio" src="./assets/img/elden_ring_recomendado.jpg" alt="card">
                     <p class="parrafo text-center text-white">Elden Ring es un videojuego de rol de acción en tercera persona, 
                         con una jugabilidad centrada en el combate y la exploración. Presenta características similares de otros 
                         juegos desarrollados por FromSoftware, tales como la saga Dark Souls, Bloodborne y Sekiro: 
                         Shadows Die Twice.</p>
                 </div>
-                <div class="cardRecomendado d-flex flex-column align-items-center justify-content-evenly p-2">
+                <div class="cardRecomendado d-flex flex-column align-items-center justify-content-evenly p-2"
+                    data-aos="fade-up" data-aos-offset="100" data-aos-delay="20" data-aos-duration="1000" 
+                    data-aos-easing="ease-in-out" data-aos-once="true">
                     <img class="imgInicio" src="./assets/img/valheim_recomendado.jpg" alt="card">
                     <p class="parrafo text-center text-white">Valheim tiene lugar en un mundo donde los vikingos asesinados van a 
                         demostrar que son aptos para los pasillos de Valhalla . Como tal, el jugador comienza sin nada y pronto 
                         descubre que para llegar al más allá nórdico, debe derrotar a los males que acechan a Valheim. 
                         Guiado únicamente por sus instintos y las pistas ocasionales de un cuervo.</p>
                 </div>
-                <div class="cardRecomendado d-flex flex-column align-items-center justify-content-evenly p-2">
+                <div class="cardRecomendado d-flex flex-column align-items-center justify-content-evenly p-2"
+                    data-aos="fade-up" data-aos-offset="100" data-aos-delay="20" data-aos-duration="1000" 
+                    data-aos-easing="ease-in-out" data-aos-once="true">
                     <img class="imgInicio" src="./assets/img/rdr2_recomendado.jpg" alt="card">
                     <p class="parrafo text-center text-white">Red Dead Redemption 2 es un juego de acción y aventuras de temática 
                         occidental . Jugado desde una perspectiva en primera o tercera persona , el juego está ambientado en un 
                         entorno de mundo abierto que presenta una versión ficticia de los Estados Unidos en 1899.</p>
                 </div>
-                <div class="cardRecomendado d-flex flex-column align-items-center justify-content-evenly p-2">
+                <div class="cardRecomendado d-flex flex-column align-items-center justify-content-evenly p-2"
+                    data-aos="fade-up" data-aos-offset="100" data-aos-delay="20" data-aos-duration="1000" 
+                    data-aos-easing="ease-in-out" data-aos-once="true">
                     <img class="imgInicio" src="./assets/img/factorio_recomendado.jpg" alt="card">
                     <p class="parrafo text-center text-white">Factorio es un videojuego de estrategia en tiempo real desarrollado por 
                         Wube Software. Ha estado disponible como videojuego de acceso anticipado desde 2013 y ha sido lanzado 
                         oficialmente el 14 de agosto de 2020.</p>
                 </div>
-                <div class="cardRecomendado d-flex flex-column align-items-center justify-content-evenly p-2">
+                <div class="cardRecomendado d-flex flex-column align-items-center justify-content-evenly p-2"
+                    data-aos="fade-up" data-aos-offset="100" data-aos-delay="20" data-aos-duration="1000" 
+                    data-aos-easing="ease-in-out" data-aos-once="true">
                     <img class="imgInicio" src="./assets/img/new_world_recomendado.jpg" alt="card">
                     <p class="parrafo text-center text-white">New World es un videojuego de rol multijugador masivo en línea 
                         desarrollado por Amazon Game Studios. Ambientado a mediados del siglo XVII, los jugadores tendrán la 
                         tarea de colonizar tierras modeladas a imagen y semejanza de la América Británica oriental.</p>
                 </div>
-                <div class="cardRecomendado d-flex flex-column align-items-center justify-content-evenly p-2">
+                <div class="cardRecomendado d-flex flex-column align-items-center justify-content-evenly p-2"
+                    data-aos="fade-up" data-aos-offset="100" data-aos-delay="20" data-aos-duration="1000" 
+                    data-aos-easing="ease-in-out" data-aos-once="true">
                     <img class="imgInicio" src="./assets/img/project_zomboid_recomendados.jpg" alt="card">
                     <p class="parrafo text-center text-white">En Project Zomboid , el jugador tiene como objetivo sobrevivir el 
                         mayor tiempo posible en un área apocalíptica y plagada de zombis alrededor de la ciudad de Louisville, 
@@ -185,6 +202,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
