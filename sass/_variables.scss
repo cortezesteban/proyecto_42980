@@ -1,6 +1,9 @@
 $degradado-principal:linear-gradient(to right, #0a0b0c, #303137);
 $degradado-menu:linear-gradient(to right, #0b427997, rgba(90, 113, 147, 0.399));
 
+$animacion-transicion:transform 0.5s linear;
+$animacion-tranformacio:scale(1.1);
+
 $borde-estandar-1:5px;
 $borde-estandar-2:5px solid black;
 
@@ -90,8 +93,10 @@ $medida-estandar-350:350px;
 $medida-estandar-370:370px;
 $medida-estandar-500:500px;
 $medida-estandar-536:536px;
+$medida-estandar-563:563px;
 $medida-estandar-600:600px;
 $medida-estandar-700:700px;
+$medida-estandar-1000:1000px;
 
 $medidas-estandar:(
     0:$medida-estandar-0,
@@ -108,8 +113,10 @@ $medidas-estandar:(
     370:$medida-estandar-370,
     500:$medida-estandar-500,
     536:$medida-estandar-536,
+    563:$medida-estandar-563,
     600:$medida-estandar-600,
-    700:$medida-estandar-700
+    700:$medida-estandar-700,
+    1000:$medida-estandar-1000
 );
 
 

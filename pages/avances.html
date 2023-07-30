@@ -67,36 +67,106 @@
                             sobre el origen de estas mutaciones y la posibilidad de que se produzca una nueva crisis en el mundo.</p>
                     </div>
                     <div class="col-md-8 col-sm-12 d-flex flex-wrap justify-content-evenly">
-                        <img class="imagenAvances mb-3" src="../assets/img/undawn_avances_1.jpg" alt="Undawn Juego PC">
-                        <img class="imagenAvances mb-3" src="../assets/img/undawn_avances_2.jpg" alt="Undawn Juego PC">
-                        <img class="imagenAvances mb-3" src="../assets/img/undawn_avances_3.jpg" alt="Undawn Juego PC">
-                        <img class="imagenAvances mb-3" src="../assets/img/undawn_avances_4.jpg" alt="Undawn Juego PC">
-                        <iframe class="iFrame mb-3" src="https://www.youtube.com/embed/ZrG578KyGbw"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                        <iframe class="iFrame mb-3" src="https://www.youtube.com/embed/d1LlP1Tilro"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                        <a href="#!" data-bs-toggle="modal" class="anclaImagen" data-bs-target="#modalUndawnAvance1">
+                            <img class="imagenAvances mb-3" src="../assets/img/undawn_avances_1_mini.jpg" alt="Undawn Juego PC">
+                        </a>
+                        <a href="#!" data-bs-toggle="modal" class="anclaImagen" data-bs-target="#modalUndawnAvance2">
+                            <img class="imagenAvances mb-3" src="../assets/img/undawn_avances_2_mini.jpg" alt="Undawn Juego PC">
+                        </a>
+                        <a href="#!" data-bs-toggle="modal" class="anclaImagen" data-bs-target="#modalUndawnAvance3">
+                            <img class="imagenAvances mb-3" src="../assets/img/undawn_avances_3_mini.jpg" alt="Undawn Juego PC">
+                        </a>
+                        <a href="#!" data-bs-toggle="modal" class="anclaImagen" data-bs-target="#modalUndawnAvance4">
+                            <img class="imagenAvances mb-3" src="../assets/img/undawn_avances_4_mini.jpg" alt="Undawn Juego PC">
+                        </a>
+                        <a href="#!" data-bs-toggle="modal" class="anclaImagen" data-bs-target="#videoUndawnTrailer1">
+                            <img class="imagenAvances mb-3" src="../assets/img/iframes_undawn_1_mini.jpg" alt="Undawn Juego PC">
+                        </a>
+                        <a href="#!" data-bs-toggle="modal" class="anclaImagen" data-bs-target="#videoUndawnTrailer2">
+                            <img class="imagenAvances mb-3" src="../assets/img/iframes_undawn_2_mini.jpg" alt="Undawn Juego PC">
+                        </a>
                     </div>
+
+                    <!-- Codigo Modal Inicio
+                        - Imagenes: funciona OK
+                        - Videos: No se como agregar la fucionalidad para que el video se detenga cuando se cierre el Modal
+                    -->
+                    <div class="col-12">
+                        <div tabindex="-1" aria-labelledby="modalUndawnAvance1" aria-hidden="true" class="modal fade" id="modalUndawnAvance1">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <img src="../assets/img/undawn_avances_1.jpg" alt="Undawn Juego PC">
+                                </div>
+                            </div>
+                        </div>
+                        <div tabindex="-1" aria-labelledby="modalUndawnAvance2" aria-hidden="true" class="modal fade" id="modalUndawnAvance2">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <img src="../assets/img/undawn_avances_2.jpg" alt="Undawn Juego PC">
+                                </div>
+                            </div>
+                        </div>
+                        <div tabindex="-1" aria-labelledby="modalUndawnAvance3" aria-hidden="true" class="modal fade" id="modalUndawnAvance3">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <img src="../assets/img/undawn_avances_3.jpg" alt="Undawn Juego PC">
+                                </div>
+                            </div>
+                        </div>
+                        <div tabindex="-1" aria-labelledby="modalUndawnAvance4" aria-hidden="true" class="modal fade" id="modalUndawnAvance4">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <img src="../assets/img/undawn_avances_4.jpg" alt="Undawn Juego PC">
+                                </div>
+                            </div>
+                        </div>
+                        <div tabindex="-1" aria-labelledby="videoUndawnTrailer1" aria-hidden="true" class="modal fade" id="videoUndawnTrailer1">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content d-flex justify-content-center align-items-center">
+                                    <iframe class="iFrame"
+                                        src="https://www.youtube.com/embed/ZrG578KyGbw" title="Undawn x Will Smith - Official Cinematic Trailer" 
+                                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div tabindex="-1" aria-labelledby="videoUndawnTrailer2" aria-hidden="true" class="modal fade" id="videoUndawnTrailer2">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content d-flex justify-content-center align-items-center">
+                                    <iframe class="iFrame"
+                                        src="https://www.youtube.com/embed/d1LlP1Tilro" title="Undawn | Will Smith Trailer" 
+                                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Codigo Modal Fin-->
                 </div>
             </div>
             <div class="col-12 pt-3 pb-3 divContenedorAvance2 mb-5">
                 <div class="row d-flex invertir">
                     <div class="col-md-8 col-sm-12 d-flex flex-wrap justify-content-evenly">
-                        <img class="imagenAvances mb-3" src="../assets/img/the_outlast_avances_1.jpg" alt="The Outlast Juego PC">
-                        <img class="imagenAvances mb-3" src="../assets/img/the_outlast_avances_2.jpg" alt="The Outlast Juego PC">
-                        <img class="imagenAvances mb-3" src="../assets/img/the_outlast_avances_3.jpg" alt="The Outlast Juego PC">
-                        <img class="imagenAvances mb-3" src="../assets/img/the_outlast_avances_4.jpg" alt="The Outlast Juego PC">
-                        <iframe class="iFrame mb-3" src="https://www.youtube.com/embed/DuKkethkMeo"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                        <iframe class="iFrame mb-3" src="https://www.youtube.com/embed/mBZmEcRg8OQ"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                        <a href="#!" data-bs-toggle="modal" class="anclaImagen" data-bs-target="#modal_outlast_Avance1">
+                            <img class="imagenAvances mb-3" src="../assets/img/the_outlast_avances_1_mini.jpg" alt="The Outlast Juego PC">
+                        </a>
+                        <a href="#!" data-bs-toggle="modal" class="anclaImagen" data-bs-target="#modal_outlast_Avance2">
+                            <img class="imagenAvances mb-3" src="../assets/img/the_outlast_avances_2_mini.jpg" alt="The Outlast Juego PC">
+                        </a>
+                        <a href="#!" data-bs-toggle="modal" class="anclaImagen" data-bs-target="#modal_outlast_Avance3">
+                            <img class="imagenAvances mb-3" src="../assets/img/the_outlast_avances_3_mini.jpg" alt="The Outlast Juego PC">
+                        </a>
+                        <a href="#!" data-bs-toggle="modal" class="anclaImagen" data-bs-target="#modal_outlast_Avance4">
+                            <img class="imagenAvances mb-3" src="../assets/img/the_outlast_avances_4_mini.jpg" alt="The Outlast Juego PC">
+                        </a>
+                        <a href="#!" data-bs-toggle="modal" class="anclaImagen" class="anclaImagen" data-bs-target="#videoOutLastTrailer1">
+                            <img class="imagenAvances mb-3" src="../assets/img/iframes_outlast_1_mini.jpg" alt="The Outlast Juego PC">
+                        </a>
+                        <a href="#!" data-bs-toggle="modal" class="anclaImagen" data-bs-target="#videoOutLastTrailer2">
+                            <img class="imagenAvances mb-3" src="../assets/img/iframes_outlast_2_mini.jpg" alt="The Outlast Juego PC">
+                        </a>
                     </div>
                     <div class="col-md-4 col-sm-12 d-flex flex-column justify-content-center align-items-center">
                         <h2 class="text-white mb-3 h2Tittle">THE OUTLAST TRIALS</h2>
@@ -112,6 +182,61 @@
                             que recuerda a SAW y Hostel. Suena genial, y en parte lo es, pero necesita ajustar un puñado de elementos 
                             antes de su estreno definitivo para que nos apetezca volver una y otra vez a sus divertidas partidas.</p>
                     </div>
+                    <!-- Codigo Modal Inicio
+                        - Imagenes: funciona OK
+                        - Videos: No se como agregar la fucionalidad para que el video se detenga cuando se cierre el Modal
+                    -->
+                    <div class="col-12">
+                        <div tabindex="-1" aria-labelledby="modal_outlast_Avance1" aria-hidden="true" class="modal fade" id="modal_outlast_Avance1">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <img src="../assets/img/the_outlast_avances_1.jpg" alt="Undawn Juego PC">
+                                </div>
+                            </div>
+                        </div>
+                        <div tabindex="-1" aria-labelledby="modal_outlast_Avance2" aria-hidden="true" class="modal fade" id="modal_outlast_Avance2">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <img src="../assets/img/the_outlast_avances_2.jpg" alt="Undawn Juego PC">
+                                </div>
+                            </div>
+                        </div>
+                        <div tabindex="-1" aria-labelledby="modal_outlast_Avance3" aria-hidden="true" class="modal fade" id="modal_outlast_Avance3">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <img src="../assets/img/the_outlast_avances_3.jpg" alt="Undawn Juego PC">
+                                </div>
+                            </div>
+                        </div>
+                        <div tabindex="-1" aria-labelledby="modal_outlast_Avance4" aria-hidden="true" class="modal fade" id="modal_outlast_Avance4">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <img src="../assets/img/the_outlast_avances_4.jpg" alt="Undawn Juego PC">
+                                </div>
+                            </div>
+                        </div>
+                        <div tabindex="-1" aria-labelledby="videoOutLastTrailer1" aria-hidden="true" class="modal fade" id="videoOutLastTrailer1">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content d-flex justify-content-center align-items-center">
+                                    <iframe class="iFrame"
+                                        src="https://www.youtube.com/embed/DuKkethkMeo" title="The Outlast Trials - Early Access Trailer" 
+                                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div tabindex="-1" aria-labelledby="videoOutLastTrailer2" aria-hidden="true" class="modal fade" id="videoOutLastTrailer2">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content d-flex justify-content-center align-items-center">
+                                    <iframe class="iFrame" 
+                                    src="https://www.youtube.com/embed/mBZmEcRg8OQ" title="The Outlast Trials Closed Beta Trailer | gamescom ONL 2022" 
+                                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Codigo Modal Fin-->
                 </div>
             </div>
         </section>

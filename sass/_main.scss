@@ -135,9 +135,15 @@ main{
 
 /***** Pantalla Avances *****/
 
-%contenedor-img-iframes{
+%contenedor-img{
     width: map-get($map: $medidas-estandar, $key: 370);
     height: map-get($map: $medidas-estandar, $key: 200);
+    transition: $animacion-transicion; 
+}
+
+%contenedor-iframes{
+    width: map-get($map: $medidas-estandar, $key: 1000);
+    height: map-get($map: $medidas-estandar, $key: 563);
 }
 
 main{
@@ -147,22 +153,35 @@ main{
         background-image: $imagen-fondo-avance-1;
         border-bottom: $borde-estandar-2;
         border-top: $borde-estandar-2;
-        .imagenAvances{
-            @extend %contenedor-img-iframes;
+        .anclaImagen{
+            overflow: hidden;
+            .imagenAvances{
+                @extend %contenedor-img;  
+            }
+            .imagenAvances:hover{
+                transform: $animacion-tranformacio;
+            }
         }
         .iFrame{
-            @extend %contenedor-img-iframes;
+            @extend %contenedor-iframes;
         }
+        
     }
     
     .divContenedorAvance2{
         background-image: $imagen-fondo-avance-2;
         border-bottom: $borde-estandar-2;
-        .imagenAvances{
-            @extend %contenedor-img-iframes;
+        .anclaImagen{
+            overflow: hidden;
+            .imagenAvances{
+                @extend %contenedor-img;
+            }
+            .imagenAvances:hover{
+                transform: $animacion-tranformacio;
+            }
         }
         .iFrame{
-            @extend %contenedor-img-iframes;
+            @extend %contenedor-iframes;
         }
     }
 }

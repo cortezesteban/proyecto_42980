@@ -219,9 +219,15 @@ main .divStarWars .contenedorFondoAnalisis {
   width: 600px;
 }
 /***** Pantalla Avances *****/
-main .divContenedorAvance2 .iFrame, main .divContenedorAvance2 .imagenAvances, main .divContenedorAvance1 .iFrame, main .divContenedorAvance1 .imagenAvances {
+main .divContenedorAvance2 .anclaImagen .imagenAvances, main .divContenedorAvance1 .anclaImagen .imagenAvances {
   width: 370px;
   height: 200px;
+  transition: transform 0.5s linear;
+}
+
+main .divContenedorAvance2 .iFrame, main .divContenedorAvance1 .iFrame {
+  width: 1000px;
+  height: 563px;
 }
 
 main {
@@ -234,9 +240,21 @@ main .divContenedorAvance1 {
   border-bottom: 5px solid black;
   border-top: 5px solid black;
 }
+main .divContenedorAvance1 .anclaImagen {
+  overflow: hidden;
+}
+main .divContenedorAvance1 .anclaImagen .imagenAvances:hover {
+  transform: scale(1.1);
+}
 main .divContenedorAvance2 {
   background-image: url("../assets/img/fondo_analisis_2.jpg");
   border-bottom: 5px solid black;
+}
+main .divContenedorAvance2 .anclaImagen {
+  overflow: hidden;
+}
+main .divContenedorAvance2 .anclaImagen .imagenAvances:hover {
+  transform: scale(1.1);
 }
 /***** Pantalla Guias *****/
 main {
