@@ -289,6 +289,9 @@ main{
         }
 
         .divContenedorAvance1{
+            background-image: $imagen-fondo-avance-1-mini;
+            background-size: map-get($map: $porcentajes-estandar, $key: 100) 
+                             map-get($map: $porcentajes-estandar, $key: 100);
             .imagenAvances{
                 width: map-get($map: $porcentajes-estandar, $key: 100);
                 height: map-get($map: $posicion-estardar, $key: automatico);
@@ -301,6 +304,9 @@ main{
         }
 
         .divContenedorAvance2{
+            background-image: $imagen-fondo-avance-2-mini;
+            background-size: map-get($map: $porcentajes-estandar, $key: 100) 
+                             map-get($map: $porcentajes-estandar, $key: 100);;
             .imagenAvances{
                 width: map-get($map: $porcentajes-estandar, $key: 100);
                 height: map-get($map: $posicion-estardar, $key: automatico);

@@ -342,6 +342,10 @@ main .gmap_canvas {
   main .invertir {
     flex-direction: column-reverse;
   }
+  main .divContenedorAvance1 {
+    background-image: url("../assets/img/fondo_analisis_1_mini.jpg");
+    background-size: 100% 100%;
+  }
   main .divContenedorAvance1 .imagenAvances {
     width: 100%;
     height: auto;
@@ -349,6 +353,10 @@ main .gmap_canvas {
   main .divContenedorAvance1 .iFrame {
     width: 100%;
     height: 200px;
+  }
+  main .divContenedorAvance2 {
+    background-image: url("../assets/img/fondo_analisis_2_mini.jpg");
+    background-size: 100% 100%;
   }
   main .divContenedorAvance2 .imagenAvances {
     width: 100%;
