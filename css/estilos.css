@@ -305,6 +305,19 @@ main .gmap_canvas {
   background: none !important;
 }
 
+/***** Pantalla Error *****/
+main {
+  background-image: url("../assets/img/storm_background.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+main .imgError {
+  width: 536px;
+  height: 536px;
+  margin-bottom: 25px;
+}
+
 @media screen and (min-width: 0px) and (max-width: 768px) {
   /***** Pantalla Index *****/
   main .contenedorInicio {
@@ -370,6 +383,13 @@ main .gmap_canvas {
   /***** Pantalla Contacto *****/
   main .formulario {
     width: 100%;
+  }
+  /***** Pantalla Error *****/
+  main .imgError {
+    width: 370px;
+    height: 370px;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 }
 footer .divFooter {

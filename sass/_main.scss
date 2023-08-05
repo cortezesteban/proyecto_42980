@@ -235,6 +235,19 @@ main{
     }
 }
 
+/***** Pantalla Error *****/
+
+main{
+    @include propiedades-main;
+
+    .imgError{
+        width: map-get($map: $medidas-estandar, $key: 536);
+        height: map-get($map: $medidas-estandar, $key: 536);
+        margin-bottom: map-get($map: $medidas-estandar, $key: 25);
+    }
+}
+
+
 @media screen and (min-width:0px) and (max-width: 768px){
     /***** Pantalla Index *****/
 
@@ -325,6 +338,17 @@ main{
     main{  
         .formulario{
             width: map-get($map: $porcentajes-estandar, $key: 100);;
+        }
+    }
+
+    /***** Pantalla Error *****/
+
+    main{
+        .imgError{
+            width: map-get($map: $medidas-estandar, $key: 370);
+            height: map-get($map: $medidas-estandar, $key: 370);
+            margin-top: map-get($map: $medidas-estandar, $key: 100);
+            margin-bottom: map-get($map: $medidas-estandar, $key: 100);
         }
     }
 }
