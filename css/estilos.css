@@ -155,6 +155,7 @@ main .contenedorCard .cardRecomendado {
 main .contenedorCard .cardRecomendado .imgInicio {
   width: 200px;
   height: 320px;
+  object-fit: cover;
 }
 
 /***** Pantalla Analisis *****/
