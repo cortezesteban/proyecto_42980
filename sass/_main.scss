@@ -241,8 +241,6 @@ main{
     @include propiedades-main;
 
     .imgError{
-        width: map-get($map: $medidas-estandar, $key: 536);
-        height: map-get($map: $medidas-estandar, $key: 536);
         margin-bottom: map-get($map: $medidas-estandar, $key: 25);
     }
 }
@@ -345,8 +343,6 @@ main{
 
     main{
         .imgError{
-            width: map-get($map: $medidas-estandar, $key: 370);
-            height: map-get($map: $medidas-estandar, $key: 370);
             margin-top: map-get($map: $medidas-estandar, $key: 100);
             margin-bottom: map-get($map: $medidas-estandar, $key: 100);
         }
